@@ -37,7 +37,9 @@ bytemuck = { version = "1.4.0", features = ["min_const_generics", "derive"] }
 num_enum = "0.7.0"
 cfg-if = "1.0.0"
 serde = { version = "1.0.136", optional = true }
-strum = { git = "https://github.com/Kamino-Finance/strum", features = ["derive"], branch = "checked_arithmetics" }
+strum = { git = "https://github.com/Kamino-Finance/strum", features = [
+    "derive",
+], branch = "checked_arithmetics" }
 pyth-sdk-solana = "0.10.1"
 switchboard-program = "0.2.0"
 arrayref = "0.3.6"
@@ -56,7 +58,10 @@ whirlpool = { git = "https://github.com/Kamino-Finance/whirlpools", branch = "an
     "no-entrypoint",
     "cpi",
 ] }
-raydium-amm-v3 = { git = "https://github.com/raydium-io/raydium-clmm", features = ["no-entrypoint", "cpi"] }
+raydium-amm-v3 = { git = "https://github.com/raydium-io/raydium-clmm", features = [
+    "no-entrypoint",
+    "cpi",
+] }
 jup-perp-itf = { path = "../jup-perp-itf", features = ["cpi"] }
 lb-clmm-itf = { path = "../lb-clmm-itf", features = ["no-entrypoint"] }
 sbod-itf = { path = "../sbod-itf" }
@@ -74,3 +79,4 @@ tracing = { version = "0.1.10", optional = true }
 chainlink-streams-report = { git = "https://github.com/smartcontractkit/data-streams-sdk.git", package = "data-streams-report" }
 num-bigint = "0.4"
 
+adrena-perp-itf = { path = "../adrena-perp-itf", features = ["cpi"] }
